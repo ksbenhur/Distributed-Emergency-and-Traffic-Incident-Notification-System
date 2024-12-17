@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Report for locustfile.py</title>
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon"/>
+    <style>
+        :root {
+            --primary-bg: #173529;
+            --secondary-bg: #11251c;
+            --hover-bg: #1d4434;
+            --text-primary: #ecf3ee;
+            --text-secondary: #b3c3bc;
+            --accent: #00ca5a;
+        }
+
+        body {
+            background: var(--primary-bg);
+            margin: 0;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: var(--text-primary);
+        }
+
+        /* Modern Card Styling */
+        .requests, .responses, .failures {
+            background: var(--secondary-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Modern Table Styling */
+        table.stats {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        table.stats thead {
+            background: var(--secondary-bg);
+        }
+
+        table.stats th {
+            padding: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+        }
+
+        table.stats td {
+            padding: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        table.stats tr:hover {
+            background: var(--hover-bg);
+            transition: background-color 0.2s ease;
+        }
+
+        /* Modern Header Styling */
+        h1, h2 {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* Info Section */
+        .info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .info p {
+            margin: 0;
+        }
+
+        .info span {
+            color: var(--text-secondary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            table.stats {
+                display: block;
+                overflow-x: auto;
+            }
+
+            table.stats td {
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+// ... rest of the HTML content remains the same ...
